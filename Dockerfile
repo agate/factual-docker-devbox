@@ -3,7 +3,7 @@ FROM factual/docker-cdh5-devbox
 MAINTAINER agate<agate.hao@gmail.com>
 
 RUN apt-get update
-RUN apt-get install -y byobu vim-nox curl mosh
+RUN apt-get install -y byobu vim-nox curl wget mosh
 RUN apt-get install -y libsqlite3-dev
 RUN apt-get install -y apt-utils
 RUN apt-get install -y libreadline6-dev, libyaml-dev, sqlite3, libgdbm-dev, libffi-dev
