@@ -6,7 +6,6 @@ RUN apt-get update
 RUN apt-get install -y byobu vim-nox curl wget mosh
 RUN apt-get install -y libsqlite3-dev
 RUN apt-get install -y apt-utils
-RUN apt-get install -y libreadline6-dev, libyaml-dev, sqlite3, libgdbm-dev, libffi-dev
 RUN apt-get -y upgrade
 
 RUN apt-get install -y apt-transport-https ca-certificates
