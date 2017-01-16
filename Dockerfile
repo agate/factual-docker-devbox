@@ -16,3 +16,6 @@ RUN apt-get install -y docker-engine
 RUN curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
 
 RUN apt-get install -y postgresql-client
+# For pyenv
+RUN apt-get install -y apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+                       libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
